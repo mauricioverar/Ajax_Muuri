@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,6 +12,7 @@
         .grid {
             position: relative;
         }
+
         .item {
             position: absolute;
             width: 100px;
@@ -19,46 +21,61 @@
             background: #000;
             color: #fff;
         }
+
         .item.muuri-item-dragging {
             z-index: 3;
         }
+
         .item.muuri-item-releasing {
             z-index: 2;
         }
     </style>
 
 </head>
+
 <body>
 
     <!--  contenedor del grafico -->
-        <div id="chartContainer" style="height: 300px; width: 100%;"></div>
-        <!--cdn jquery-3.5.1-->
-        <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+    <!--cdn jquery-3.5.1-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 
-        <!--  CDN de jQuery y CanvasJS, -->
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
-        <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <!--  CDN de jQuery y CanvasJS, -->
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
 
-    <!-- Muuri -->
+    <!-- Muuri 
+    concepto drag & drop
+    (arrastrar y soltar)-->
     <div class="grid">
         <div class="item">
             <div class="item-content">
-            Esto puede ser cualquier texto.
+                JavaScript Ajax
+
             </div>
         </div>
         <div class="item">
             <div class="item-content">
                 <div class="my-custom-content">
-                    Y aquí también!
+                    CanvasJS Muuri
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="item-content">
+                <div class="my-custom-content">
+                    JQuery
                 </div>
             </div>
         </div>
     </div>
-        <!--  CDN de muuri -->   
+    <!--  CDN de muuri -->
     <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.0/dist/muuri.min.js"></script>
-        
-        
+
+
 
     <script src="script.js"></script>
 </body>
+
 </html>

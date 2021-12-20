@@ -27,7 +27,7 @@ $(document).ready(function(){
         success: function(datos) {
             let datosApi = datos.serie;
             console.log(datosApi);
-            for (var i = 0; i < datosApi.length; i++){// no traía este cierre de llave } pag 33 lectura
+            for (var i = 0; i < datosApi.length; i++){// ojo cierre de llave }  33 
                 dataPoints.push({
                     x: new Date(datosApi[i].fecha),
                     y: datosApi[i].valor
@@ -41,7 +41,7 @@ $(document).ready(function(){
     });
 });
 
-// muuri
+// muuri concepto drag & drop(arrastrar y soltar)
 var grid = new Muuri('.grid',
     {
     dragEnabled: true,
